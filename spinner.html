@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>spinner</title>
+<style>
+   .spinner {
+        width: 50px;
+        height: 50px;
+        margin: 5em;
+        border: 10px solid peru;
+        border-radius: 50% ;
+        border-top-color: blue;
+        border-bottom-color: red;
+        border-left-color: yellowgreen;
+        animation: spin 0.5s infinite;
+      }
+
+      .spinner1 {
+        width: 50px;
+        height: 50px;
+        margin: 5em;
+        border: 10px solid rgb(107, 66, 26);
+        border-radius: 50% ;
+        border-top-color: rgb(4, 207, 173);
+        border-bottom-color: rgb(255, 72, 72);
+        border-left-color: yellowgreen;
+        animation: spin 1s infinite;
+      }
+
+      .spinner2 {
+        width: 50px;
+        height: 50px;
+        margin: 5em;
+        border: 10px solid rgb(228, 121, 14);
+        border-radius: 50% ;
+        border-top-color: rgb(136, 136, 231);
+        border-bottom-color: rgb(97, 41, 41);
+        border-left-color: rgb(28, 241, 178);
+        animation: spin 1.5s infinite;
+      }
+
+   @keyframes spin {
+       0% { transform: rotate(0deg) }
+       50% { transform: rotate(180deg) scale(1.5);}
+       100% { transform: rotate(360deg) scale(1); }
+     }
+     .nope { margin: -150px  180px;
+     }
+
+     .nope1 { margin: -150px  360px;
+     }
+
+</style>
+</head>
+<body>
+<div class="spinner"> </div>
+
+<div class="nope">
+<div class="spinner1">  </div>
+</div>
+
+<div class="nope1">
+  <div class="spinner2"> </div>
+  </div>
+ 
+
+</body>
+</html>
